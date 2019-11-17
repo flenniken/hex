@@ -4,7 +4,6 @@ Find the solutions to a Pentomino puzzle on a 10x6 board.
 
 Here are the pieces:
 
-![Alt text](./pieces.svg)
 <img src="./pieces.svg">
 
 Run hex to see the solutions.
