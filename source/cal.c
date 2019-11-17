@@ -19,21 +19,21 @@
 
 void CalculatePositions(void);
 void PrintPattern(PIECE *piece);
-void DrawPiece(ULONG pattern);
+void DrawPiece(uint32_t pattern);
 void CalculatePatterns(void);
 int CountPatterns(int p);
 void DoAllPieces(void);
-void *mymalloc(USHORT size);
-void DoBaseLocation(BIT64 *p, ULONG *base, UCHAR *location);
+void *mymalloc(uint16_t size);
+void DoBaseLocation(BIT64 *p, uint32_t *base, uint8_t *location);
 void DisplayPiece(PIECE *piece, int num);
-BOOLEAN useit(ULONG base, UCHAR location);
+BOOLEAN useit(uint32_t base, uint8_t location);
 
 #include "pieces.h"
 
 typedef struct {
-	ULONG pat:25;
-	ULONG shifts:3;
-	ULONG piece:4;
+	uint32_t pat:25;
+	uint32_t shifts:3;
+	uint32_t piece:4;
 } PATTERN;
 
 
@@ -48,7 +48,7 @@ typedef struct {
 	    "00 06 12 18 24 30 36 42 48 54\n"
 #endif
 
-ULONG Value[] = {
+uint32_t Value[] = {
 //             7654 3210 9876 5432 1098 7654 3210
 0x10,       //                             4
 0x8,        //                               3
@@ -70,12 +70,12 @@ PATTERN *Pattern;
 
 PIECE *Allpiece[12];   /* 12 pointers, where each is a pointer to an array of 
 							placements of one piece. */
-USHORT Placements[12]; /* Number of placements for each piece. */
+uint16_t Placements[12]; /* Number of placements for each piece. */
 SQUARE *Square[60];
 int SquareCount[60];
-ULONG Bitsq[32];
+uint32_t Bitsq[32];
 
-USHORT Totalmemory;
+uint16_t Totalmemory;
 
 void CalculateAllpiece(void)
 {
@@ -139,7 +139,7 @@ void CalculatePatterns(void)
 	int shifts;
 	int count;
 	int piece;
-	ULONG number;
+	uint32_t number;
 
 	for (count = 0; Pieces[count][0] != '0'; count++)
 		;	// count pieces
@@ -265,9 +265,9 @@ void DoAllPieces(void)
 	BIT64 pattern;
 	int p;
 	int piecenum;
-	ULONG base;
-	UCHAR location;
-	UCHAR lowest;
+	uint32_t base;
+	uint8_t location;
+	uint8_t lowest;
 
 	p = 0;
 	count = 0; 
@@ -363,7 +363,7 @@ void PrintPattern(PIECE *piece)
 BOOLEAN IsPieceOnSquare(PIECE *piece, int square)
 {
 	int i;
-	ULONG bit;
+	uint32_t bit;
 
 	i = square - (8 * piece->location);
 
@@ -511,7 +511,7 @@ void CalculateSquare(void)
 void CalculateBitsq(void)
 {
 	int i;
-	ULONG bit;
+	uint32_t bit;
 
 	bit = 1;
 	for (i = 0; i < 32; i++)
@@ -524,7 +524,7 @@ void CalculateBitsq(void)
 	}
 }
 
-void *mymalloc(USHORT size)
+void *mymalloc(uint16_t size)
 {
 	void *ptr;
 
@@ -561,7 +561,7 @@ void DisplayPiece(PIECE *piece, int num)
 	}	
 }
 
-BOOLEAN useit(ULONG base, UCHAR location)
+BOOLEAN useit(uint32_t base, uint8_t location)
 {
 	int i;
 
@@ -573,10 +573,10 @@ BOOLEAN useit(ULONG base, UCHAR location)
 	return TRUE;		
 }
 
-void DoBaseLocation(BIT64 *p, ULONG *base, UCHAR *location)
+void DoBaseLocation(BIT64 *p, uint32_t *base, uint8_t *location)
 {
-	UCHAR loc;
-	UCHAR bb[8];
+	uint8_t loc;
+	uint8_t bb[8];
 	BASE ba;
 
 	if (p->low & 0xff)
@@ -621,14 +621,14 @@ void DoBaseLocation(BIT64 *p, ULONG *base, UCHAR *location)
 	else
 		ba.b3 = 0;
 
-	*base = *(ULONG *)&ba;
+	*base = *(uint32_t *)&ba;
 	*location = loc;
 }
 
-void DrawPiece(ULONG pattern)
+void DrawPiece(uint32_t pattern)
 {
 	int i, j;
-	ULONG jbit, bit;
+	uint32_t jbit, bit;
 
 	jbit = 16;
 	for (j = 0; j < 6; j++)

@@ -1,54 +1,51 @@
-typedef uint32_t ULONG;
-typedef uint16_t USHORT;
-typedef unsigned char UCHAR;
 
 #define HIGHMAX 0x8000000
 #define HIGHDONE 0xFFFFFFF
 
 
 typedef struct {
-	UCHAR b0;
-	UCHAR b1;
-	UCHAR b2;
-	UCHAR b3;
-	UCHAR b4;
-	UCHAR b5;
-	UCHAR b6;
-	UCHAR b7;
+	uint8_t b0;
+	uint8_t b1;
+	uint8_t b2;
+	uint8_t b3;
+	uint8_t b4;
+	uint8_t b5;
+	uint8_t b6;
+	uint8_t b7;
 } BIT64BYTES;
 
-typedef UCHAR BB[8];
+typedef uint8_t BB[8];
 
 typedef struct {
-	UCHAR b0;
-	UCHAR b1;
-	UCHAR b2;
-	UCHAR b3;
+	uint8_t b0;
+	uint8_t b1;
+	uint8_t b2;
+	uint8_t b3;
 } BASE;
 
 //typedef struct {
-//	ULONG base : 25;
-//	ULONG shift : 7;
+//	uint32_t base : 25;
+//	uint32_t shift : 7;
 //} PIECE;
 
 typedef struct {
 	union {
-		ULONG base;
-		UCHAR bb[4];
+		uint32_t base;
+		uint8_t bb[4];
 		struct {
-			UCHAR b0;
-			UCHAR b1;
-			UCHAR b2;
-			UCHAR b3;
+			uint8_t b0;
+			uint8_t b1;
+			uint8_t b2;
+			uint8_t b3;
 		}b;
 	}u;
-	UCHAR location : 3;
-	UCHAR lowestbit : 5;
+	uint8_t location : 3;
+	uint8_t lowestbit : 5;
 } PIECE;
 
 typedef struct {
-	ULONG low;
-	ULONG high;
+	uint32_t low;
+	uint32_t high;
 } BIT64;
 
 typedef struct {
@@ -85,10 +82,10 @@ BOOLEAN placepiece(PIECE *piece);
 four bits are unused. */
 typedef struct {
 	union {
-		UCHAR bb[8];
+		uint8_t bb[8];
 		struct {
-			ULONG low;
-			ULONG high;
+			uint32_t low;
+			uint32_t high;
 		}hl;
 	}u;
 } BOARD;

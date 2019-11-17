@@ -12,17 +12,17 @@
 #define DISPLAYREMOVE 0
 #define STACKOVERFLOW 0
 
-ULONG RemoveCount;
+uint32_t RemoveCount;
 
 extern PIECE *Allpiece[12];   /* 12 pointers, where each is a pointer to an array of 
 							placements of one piece. */
 extern int Placements[12]; /* Number of placements for each piece. */
 extern SQUARE *Square[60];
 extern int SquareCount[60];
-extern ULONG Bitsq[32];
+extern uint32_t Bitsq[32];
 
 BOARD Board;
-ULONG over;
+uint32_t over;
 
 int P[12];			/* Position Allsquare (j). */
 int Stacktop;
@@ -31,8 +31,8 @@ clock_t Cstart;
 int Solutions;
 
 int main(void);
-ULONG shift6(ULONG bit, int *low);
-void DisplayPieceNum(ULONG bit, int low);
+uint32_t shift6(uint32_t bit, int *low);
+void DisplayPieceNum(uint32_t bit, int low);
 void findnextsquare(void);
 void trynextsquare(int k);
 void RemovePiece(PIECE *piece);
@@ -50,15 +50,6 @@ int main(void)
 	int sq;
 	int n;
 #endif
-
-  ULONG t32;
-  USHORT t16;
-  UCHAR t8;
-  if (sizeof(t32) != 4 || sizeof(t16) != 2 || sizeof(t8) != 1)
-  {
-    printf("unexpected number of bits\n");
-    exit(3);
-  }
 
 	Cstart = clock();
 

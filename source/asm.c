@@ -38,8 +38,8 @@ _asm {
 #if USEASMREMOVEPIECE
 BOOLEAN placepiece(PIECE *piece)
 {
-//	UCHAR b;
-//	UCHAR xor;
+//	uint8_t b;
+//	uint8_t xor;
 //	BOARD board;
 //	int i;
 
@@ -90,8 +90,8 @@ done:
 
 BOOLEAN placepiece(PIECE *piece)
 {
-	UCHAR b;
-	UCHAR xor;
+	uint8_t b;
+	uint8_t xor;
 	BOARD board;
 //	int i;
 
