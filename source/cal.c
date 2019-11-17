@@ -68,7 +68,7 @@ uint32_t Value[] = {
 };
 PATTERN *Pattern;
 
-PIECE *Allpiece[12];   /* 12 pointers, where each is a pointer to an array of 
+PIECE *Allpiece[12];   /* 12 pointers, where each is a pointer to an array of
 							placements of one piece. */
 uint16_t Placements[12]; /* Number of placements for each piece. */
 SQUARE *Square[60];
@@ -108,7 +108,7 @@ void CalculateAllpiece(void)
 			printf("9876 54321098 76543210 98765432 10987654 32109876 54321098 76543210\n");
 			PrintPattern(&Allpiece[i][j]);
 			printf("\n");
-			printf("%d, %d, %lx\n", Allpiece[i][j].location, 
+			printf("%d, %d, %lx\n", Allpiece[i][j].location,
 				Allpiece[i][j].lowestbit, Allpiece[i][j].u.base);
 
 #if DONTUSE
@@ -228,7 +228,7 @@ int CountPatterns(int p)
 	pattern.low = Pattern[p].pat;
 	shifts = (int)Pattern[p].shifts;
 
-	count = 0; 
+	count = 0;
 	for (i = 0; i < 10; i++)
 	{
 		for (j = 0; j < shifts; j++)
@@ -240,7 +240,7 @@ int CountPatterns(int p)
 			if (pattern.low & 0x80000000)
 				pattern.high |= 1;
 			pattern.low <<= 1;
-		}			
+		}
 		for (k = 0; k < (6 - shifts); k++)
 		{
 			if (pattern.high & HIGHMAX)
@@ -270,7 +270,7 @@ void DoAllPieces(void)
 	uint8_t lowest;
 
 	p = 0;
-	count = 0; 
+	count = 0;
 	piecenum = 1;
 
 	while (Pattern[p].pat)
@@ -300,7 +300,7 @@ void DoAllPieces(void)
 					for (lowest = 0; lowest < 32; lowest++)
 					{
 						if (base & Bitsq[lowest])
-							break;						
+							break;
 					}
 
 					Allpiece[piecenum-1][count].u.base = base;
@@ -322,7 +322,7 @@ void DoAllPieces(void)
 				if (pattern.low & 0x80000000)
 					pattern.high |= 1;
 				pattern.low <<= 1;
-			}			
+			}
 			for (k = 0; k < (6 - shifts); k++)
 			{
 				if (pattern.high & HIGHMAX)
@@ -400,7 +400,7 @@ void CalculateSquare(void)
 			{
 				/* Check piece to see whether it fits over this square. */
 				if (IsPieceOnSquare(&Allpiece[i][j], sq))
-					SquareCount[sq]++;			
+					SquareCount[sq]++;
 			}
 		}
 #if COUNTPIECES
@@ -432,8 +432,8 @@ void CalculateSquare(void)
 				/* Check piece to see whether it fits over this square. */
 				if (IsPieceOnSquare(&Allpiece[i][j], sq))
 				{
-					Square[sq][count].i = (unsigned char)i;			
-					Square[sq][count].j = j;			
+					Square[sq][count].i = (unsigned char)i;
+					Square[sq][count].j = j;
 					if ((int)Square[sq][count].i != i ||
 						(int)Square[sq][count].j != j)
 					{
@@ -473,8 +473,8 @@ void CalculateSquare(void)
 					k--;
 				}
 			}
-		}	
-	}	
+		}
+	}
 
 #if DISPLAYSQUARE
 	printf("Max next %d\n", maxnext);
@@ -491,7 +491,7 @@ void CalculateSquare(void)
 		{
 			i = Square[sq][count].i;
 			j = Square[sq][count].j;
-			printf("square= %d, i=%d, j=%d, next=%d", sq, i, j, 
+			printf("square= %d, i=%d, j=%d, next=%d", sq, i, j,
 				Square[sq][count].next);
 			if (IsPieceOnSquare(&Allpiece[i][j].base, sq))
 				printf("\n");
@@ -500,9 +500,9 @@ void CalculateSquare(void)
 				printf(" bad square\n");
 				DisplayBoard(Allpiece[i][j], i);
 			}
-		}	
+		}
 #endif
-	}	
+	}
 #if TOTALMEMORY
 	printf("Total memory allocated %u\n", Totalmemory);
 #endif
@@ -530,7 +530,7 @@ void *mymalloc(uint16_t size)
 
 	ptr = malloc(size);
 	if (ptr)
-		Totalmemory += size;	
+		Totalmemory += size;
 	return ptr;
 }
 
@@ -551,14 +551,14 @@ void DisplayPiece(PIECE *piece, int num)
 			{
 				if (num < 9)
 					printf("%d", num+1);
-				else	
+				else
 					printf("%c", 'a' + num + 1 - 10);
 			}
 			else
 				printf("x");
-		}	
+		}
 		printf("\n");
-	}	
+	}
 }
 
 BOOLEAN useit(uint32_t base, uint8_t location)
@@ -568,9 +568,9 @@ BOOLEAN useit(uint32_t base, uint8_t location)
 	for (i = 0; Dontuse[i].u.base != 0; i++)
 	{
 		if (location == Dontuse[i].location && base == Dontuse[i].u.base)
-			return FALSE;		
+			return FALSE;
 	}
-	return TRUE;		
+	return TRUE;
 }
 
 void DoBaseLocation(BIT64 *p, uint32_t *base, uint8_t *location)
@@ -603,7 +603,7 @@ void DoBaseLocation(BIT64 *p, uint32_t *base, uint8_t *location)
 	memcpy(bb, p, 8);
 
 #if PRINTBASE
-	printf("%d, %d, %d, %d, %d, %d, %d, %d\n", 
+	printf("%d, %d, %d, %d, %d, %d, %d, %d\n",
 		bb[7], bb[6], bb[5], bb[4], bb[3], bb[2], bb[1], bb[0]);
 #endif
 
@@ -641,10 +641,8 @@ void DrawPiece(uint32_t pattern)
 			else
 				printf(" ");
 			bit <<= 6;
-		}	
+		}
 		printf("\n");
 		jbit >>= 1;
-	}	
+	}
 }
-
-

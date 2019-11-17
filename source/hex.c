@@ -14,7 +14,7 @@
 
 uint32_t RemoveCount;
 
-extern PIECE *Allpiece[12];   /* 12 pointers, where each is a pointer to an array of 
+extern PIECE *Allpiece[12];   /* 12 pointers, where each is a pointer to an array of
 							placements of one piece. */
 extern int Placements[12]; /* Number of placements for each piece. */
 extern SQUARE *Square[60];
@@ -57,17 +57,17 @@ int main(void)
 
 	CalculateAllpiece();
 
-	printf("Pieces calculated\n");
+	/* printf("Pieces calculated\n"); */
 
 	CalculateSquare();
 
 #if DEBUG
 	for (sq = 0; sq < 60; sq++)
-	{	
+	{
 		int numbits;
 
 		printf("square %d\n", sq);
-		printf("elapsed time %4.2f sec\n", ((float)clock() - Cstart) / CLOCKS_PER_SEC); 
+		printf("elapsed time %4.2f sec\n", ((float)clock() - Cstart) / CLOCKS_PER_SEC);
 		if (sq == 1)
     {
       printf("square is 1")
@@ -108,7 +108,7 @@ int main(void)
 	}
 #endif
 
-	printf("Squares calculated\n");
+	/* printf("Squares calculated\n"); */
 
 	for (c = 0; c < SquareCount[0]; c++)
 	{
@@ -119,7 +119,9 @@ int main(void)
 		assert(i >=0 && i < 12);
 #endif
 
-		printf("Square %d\n", c);
+		/* printf("Square %d\n", c); */
+    printf(".");
+    fflush(stdout);
 
 		for (m = 0; m < 12; m++)
 			P[m] = -1;
@@ -134,7 +136,7 @@ int main(void)
 		P[i] = j;
 		Stacktop = 1;
 
-#if DISPLAYBOARD		
+#if DISPLAYBOARD
 		DisplayBoard(NULL);
 		printf("\n");
 #endif
@@ -147,11 +149,12 @@ int main(void)
 			m = Square[Bitsquare][k].i;
 			if (P[m] == -1)
 				trynextsquare(k);
-			else	
+			else
 				k += Square[Bitsquare][k].next-1;
 		}
 	}
-	printf("Total time %4.2f sec\n", ((float)clock() - Cstart) / CLOCKS_PER_SEC); 
+	printf("Total time %4.2f sec\n", ((float)clock() - Cstart) / CLOCKS_PER_SEC);
+  printf("See solution.out\n");
   return 0;
 }
 
@@ -193,7 +196,7 @@ void trynextsquare(int kk)
 		P[i] = j;
 		Stacktop++;
 
-#if DISPLAYBOARD		
+#if DISPLAYBOARD
 		DisplayBoard(NULL);
 		printf("\n");
 #endif
@@ -209,13 +212,15 @@ void trynextsquare(int kk)
 
 			Solutions++;
 
+#if DISPLAYBOARD
 			printf("Found solution %d\n", Solutions);
-			printf("elapsed time %4.2f sec\n", ((float)clock() - Cstart) / CLOCKS_PER_SEC); 
+			printf("elapsed time %4.2f sec\n", ((float)clock() - Cstart) / CLOCKS_PER_SEC);
 			DisplayBoard(NULL);
 			printf("\n");
+#endif
 
 			fprintf(file, "Found solution %d\n", Solutions);
-			fprintf(file, "elapsed time %4.2f sec\n", ((float)clock() - Cstart) / CLOCKS_PER_SEC); 
+			fprintf(file, "elapsed time %4.2f sec\n", ((float)clock() - Cstart) / CLOCKS_PER_SEC);
 			DisplayBoard(file);
 			fprintf(file, "\n");
 
@@ -236,7 +241,7 @@ void trynextsquare(int kk)
 		}
 #if DISPLAYREMOVE
 		RemoveCount++;
-		printf("Before remove %lu\n", RemoveCount);		
+		printf("Before remove %lu\n", RemoveCount);
 		DisplayBoard(NULL);
 		printf("\n");
 #endif
@@ -271,7 +276,7 @@ void trynextsquare(int kk)
 		P[i] = -1;
 
 #if DISPLAYREMOVE
-		printf("Remove %lu\n", RemoveCount);		
+		printf("Remove %lu\n", RemoveCount);
 		DisplayBoard(NULL);
 		printf("\n");
 #endif
@@ -280,7 +285,7 @@ void trynextsquare(int kk)
 //		findnextsquare();
 
 		Bitsquare = Allpiece[i][j].lowestbit + 8 * Allpiece[i][j].location;
-	}		
+	}
 }
 
 void findnextsquare(void)
@@ -340,7 +345,7 @@ void DisplayBoard(FILE *file)
 					else
 						printf("%d", num+1);
 				}
-				else	
+				else
 				{
 					if (file)
 						fprintf(file, "%c", 'a' + num + 1 - 10);
@@ -350,15 +355,15 @@ void DisplayBoard(FILE *file)
 			}
 			else
 				if (file)
-					fprintf(file, "_");
+					fprintf(file, "x");
 				else
-					printf("_");
-		}	
+					printf("x");
+		}
 		if (file)
 			fprintf(file, "\n");
 		else
 			printf("\n");
-	}	
+	}
 }
 
 int findnumber(int square)
@@ -378,7 +383,3 @@ int findnumber(int square)
 	printf("findnumber error i %d, j %d, square %d\n", i, p, square);
 	exit(1);
 }
-
-
-
-

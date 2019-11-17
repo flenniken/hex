@@ -89,4 +89,3 @@ typedef struct {
 		}hl;
 	}u;
 } BOARD;
-
