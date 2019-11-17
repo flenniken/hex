@@ -1,5 +1,5 @@
-typedef unsigned short USHORT;
-typedef unsigned long ULONG;
+typedef uint32_t ULONG;
+typedef uint16_t USHORT;
 typedef unsigned char UCHAR;
 
 #define HIGHMAX 0x8000000

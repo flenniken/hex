@@ -1,4 +1,5 @@
 
+#include <stdint.h>
 #include "hex.h"
 
 #define USEASMREMOVEPIECE 0

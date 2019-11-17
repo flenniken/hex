@@ -1,11 +1,10 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
 #include <time.h>
-#include "malloc.h"
-#include "string.h"
-#include "conio.h"
-#include "assert.h"
+#include <string.h>
+#include <assert.h>
 #include "hex.h"
 
 #define DEBUG 0
@@ -31,7 +30,7 @@ int Bitsquare;
 clock_t Cstart;
 int Solutions;
 
-void main(void);
+int main(void);
 ULONG shift6(ULONG bit, int *low);
 void DisplayPieceNum(ULONG bit, int low);
 void findnextsquare(void);
@@ -40,8 +39,7 @@ void RemovePiece(PIECE *piece);
 void DisplayBoard(FILE *file);
 int findnumber(int square);
 
-
-void main(void)
+int main(void)
 {
 	int i;
 	int j;
@@ -52,6 +50,15 @@ void main(void)
 	int sq;
 	int n;
 #endif
+
+  ULONG t32;
+  USHORT t16;
+  UCHAR t8;
+  if (sizeof(t32) != 4 || sizeof(t16) != 2 || sizeof(t8) != 1)
+  {
+    printf("unexpected number of bits\n");
+    exit(3);
+  }
 
 	Cstart = clock();
 
@@ -69,9 +76,12 @@ void main(void)
 		int numbits;
 
 		printf("square %d\n", sq);
-		printf("elapsed time %4.2f sec\n", ((float)clock() - Cstart) / CLK_TCK); 
+		printf("elapsed time %4.2f sec\n", ((float)clock() - Cstart) / CLOCKS_PER_SEC); 
 		if (sq == 1)
+    {
+      printf("square is 1")
 			exit(1);
+    }
 
 		for (k = 0; k < SquareCount[sq]; k++)
 		{
@@ -150,7 +160,8 @@ void main(void)
 				k += Square[Bitsquare][k].next-1;
 		}
 	}
-	printf("Total time %4.2f sec\n", ((float)clock() - Cstart) / CLK_TCK); 
+	printf("Total time %4.2f sec\n", ((float)clock() - Cstart) / CLOCKS_PER_SEC); 
+  return 0;
 }
 
 void trynextsquare(int kk)
@@ -200,22 +211,24 @@ void trynextsquare(int kk)
 		{
 			FILE *file;
 			if ((file = fopen("solution.out", "at+")) == NULL)
+      {
+        printf("unable to open solutions.out");
 				exit(1);
+      }
 
 			Solutions++;
 
 			printf("Found solution %d\n", Solutions);
-			printf("elapsed time %4.2f sec\n", ((float)clock() - Cstart) / CLK_TCK); 
+			printf("elapsed time %4.2f sec\n", ((float)clock() - Cstart) / CLOCKS_PER_SEC); 
 			DisplayBoard(NULL);
 			printf("\n");
 
 			fprintf(file, "Found solution %d\n", Solutions);
-			fprintf(file, "elapsed time %4.2f sec\n", ((float)clock() - Cstart) / CLK_TCK); 
+			fprintf(file, "elapsed time %4.2f sec\n", ((float)clock() - Cstart) / CLOCKS_PER_SEC); 
 			DisplayBoard(file);
 			fprintf(file, "\n");
 
 			fclose(file);
-//			exit(1);
 		}
 		else
 		{
@@ -346,9 +359,9 @@ void DisplayBoard(FILE *file)
 			}
 			else
 				if (file)
-					fprintf(file, "x");
+					fprintf(file, "_");
 				else
-					printf("x");
+					printf("_");
 		}	
 		if (file)
 			fprintf(file, "\n");

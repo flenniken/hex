@@ -12,14 +12,13 @@
 
 #include "stdio.h"
 #include "stdlib.h"
-#include "malloc.h"
+/* #include "malloc.h" */
 #include "string.h"
 #include "hex.h"
 #include "dontuse.h"
 
 void CalculatePositions(void);
 void PrintPattern(PIECE *piece);
-void main(void);
 void DrawPiece(ULONG pattern);
 void CalculatePatterns(void);
 int CountPatterns(int p);
@@ -638,7 +637,7 @@ void DrawPiece(ULONG pattern)
 		for (i = 0; i < 10; i++)
 		{
 			if (bit & pattern)
-				printf("þ");
+				printf("p");
 			else
 				printf(" ");
 			bit <<= 6;
