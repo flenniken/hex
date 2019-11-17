@@ -15,5 +15,5 @@ asm.o : asm.c hex.h
 
 .PHONY : clean
 clean :
-	rm hex $(objects)
+	rm -f hex $(objects) solution.out
 
