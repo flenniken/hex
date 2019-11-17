@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -9,13 +10,14 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="744.09448819"
-   height="1052.3622047"
+   width="694.42859"
+   height="271.57144"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.46"
-   sodipodi:docname="drawing.svg"
-   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   sodipodi:docname="pieces.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.1">
   <defs
      id="defs4">
     <inkscape:perspective
@@ -26,10 +28,8 @@
        inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
        id="perspective10" />
     <g
-       stroke="#000000"
-       stroke-width="0.25"
-       fill="#DD99BB"
-       id="Z">
+       id="Z"
+       style="fill:#dd99bb;stroke:#000000;stroke-width:0.25">
       <rect
          id="rect2531"
          y="0"
@@ -62,15 +62,12 @@
          width="25" />
       <polygon
          id="polygon2541"
-         points="0,0 50,0 50,50 75,50 75,75 25,75 25,25 0,25 0,0"
-         stroke-width="3"
-         fill="none" />
+         points="0,0 50,0 50,50 75,50 75,75 25,75 25,25 0,25 "
+         style="fill:none;stroke-width:3" />
     </g>
     <g
-       stroke="#000000"
-       stroke-width="0.25"
-       fill="#CC88CC"
-       id="Y">
+       id="Y"
+       style="fill:#cc88cc;stroke:#000000;stroke-width:0.25">
       <rect
          id="rect2518"
          y="0"
@@ -103,15 +100,12 @@
          width="25" />
       <polygon
          id="polygon2528"
-         points="0,0 25,0 25,25 50,25 50,50 25,50 25,100 0,100 0,0"
-         stroke-width="3"
-         fill="none" />
+         points="0,0 25,0 25,25 50,25 50,50 25,50 25,100 0,100 "
+         style="fill:none;stroke-width:3" />
     </g>
     <g
-       stroke="#000000"
-       stroke-width="0.25"
-       fill="#BB99DD"
-       id="X">
+       id="X"
+       style="fill:#bb99dd;stroke:#000000;stroke-width:0.25">
       <rect
          id="rect2505"
          y="0"
@@ -144,15 +138,12 @@
          width="25" />
       <polygon
          id="polygon2515"
-         points="0,0 25,0 25,25 50,25 50,50 25,50 25,75 0,75 0,50 -25,50 -25,25 0,25 0,0"
-         stroke-width="3"
-         fill="none" />
+         points="0,50 -25,50 -25,25 0,25 0,0 25,0 25,25 50,25 50,50 25,50 25,75 0,75 "
+         style="fill:none;stroke-width:3" />
     </g>
     <g
-       stroke="#000000"
-       stroke-width="0.25"
-       fill="#AAAAEE"
-       id="W">
+       id="W"
+       style="fill:#aaaaee;stroke:#000000;stroke-width:0.25">
       <rect
          id="rect2492"
          y="0"
@@ -185,15 +176,12 @@
          width="25" />
       <polygon
          id="polygon2502"
-         points="0,0 25,0 25,25 50,25 50,50 75,50 75,75 25,75 25,50 0,50 0,0"
-         stroke-width="3"
-         fill="none" />
+         points="25,50 0,50 0,0 25,0 25,25 50,25 50,50 75,50 75,75 25,75 "
+         style="fill:none;stroke-width:3" />
     </g>
     <g
-       stroke="#000000"
-       stroke-width="0.25"
-       fill="#99BBDD"
-       id="V">
+       id="V"
+       style="fill:#99bbdd;stroke:#000000;stroke-width:0.25">
       <rect
          id="rect2479"
          y="0"
@@ -226,15 +214,12 @@
          width="25" />
       <polygon
          id="polygon2489"
-         points="0,0 25,0 25,50 75,50 75,75 0,75 0,0"
-         stroke-width="3"
-         fill="none" />
+         points="25,50 75,50 75,75 0,75 0,0 25,0 "
+         style="fill:none;stroke-width:3" />
     </g>
     <g
-       stroke="#000000"
-       stroke-width="0.25"
-       fill="#88CCCC"
-       id="U">
+       id="U"
+       style="fill:#88cccc;stroke:#000000;stroke-width:0.25">
       <rect
          id="rect2466"
          y="0"
@@ -267,15 +252,12 @@
          width="25" />
       <polygon
          id="polygon2476"
-         points="0,0 25,0 25,25 50,25 50,0 75,0 75,50 0,50 0,0"
-         stroke-width="3"
-         fill="none" />
+         points="0,0 25,0 25,25 50,25 50,0 75,0 75,50 0,50 "
+         style="fill:none;stroke-width:3" />
     </g>
     <g
-       stroke="#000000"
-       stroke-width="0.25"
-       fill="#99DDBB"
-       id="T">
+       id="T"
+       style="fill:#99ddbb;stroke:#000000;stroke-width:0.25">
       <rect
          id="rect2453"
          y="0"
@@ -308,15 +290,12 @@
          width="25" />
       <polygon
          id="polygon2463"
-         points="0,0 75,0 75,25 50,25 50,75 25,75 25,25 0,25 0,0"
-         stroke-width="3"
-         fill="none" />
+         points="0,0 75,0 75,25 50,25 50,75 25,75 25,25 0,25 "
+         style="fill:none;stroke-width:3" />
     </g>
     <g
-       stroke="#000000"
-       stroke-width="0.25"
-       fill="#AAEEAA"
-       id="H">
+       id="H"
+       style="fill:#aaeeaa;stroke:#000000;stroke-width:0.25">
       <rect
          id="rect2440"
          y="0"
@@ -349,15 +328,12 @@
          width="25" />
       <polygon
          id="polygon2450"
-         points="0,0 25,0 25,50 50,50 50,100 25,100 25,75 0,75 0,0"
-         stroke-width="3"
-         fill="none" />
+         points="0,0 25,0 25,50 50,50 50,100 25,100 25,75 0,75 "
+         style="fill:none;stroke-width:3" />
     </g>
     <g
-       stroke="#000000"
-       stroke-width="0.25"
-       fill="#BBDD99"
-       id="P">
+       id="P"
+       style="fill:#bbdd99;stroke:#000000;stroke-width:0.25">
       <rect
          id="rect2427"
          y="0"
@@ -390,15 +366,12 @@
          width="25" />
       <polygon
          id="polygon2437"
-         points="0,0 50,0 50,50 25,50 25,75 0,75 0,0"
-         stroke-width="3"
-         fill="none" />
+         points="50,50 25,50 25,75 0,75 0,0 50,0 "
+         style="fill:none;stroke-width:3" />
     </g>
     <g
-       stroke="#000000"
-       stroke-width="0.25"
-       fill="#CCCC88"
-       id="L">
+       id="L"
+       style="fill:#cccc88;stroke:#000000;stroke-width:0.25">
       <rect
          id="rect2414"
          y="0"
@@ -431,15 +404,12 @@
          width="25" />
       <polygon
          id="polygon2424"
-         points="0,0 25,0 25,75 50,75 50,100 0,100 0,0"
-         stroke-width="3"
-         fill="none" />
+         points="25,75 50,75 50,100 0,100 0,0 25,0 "
+         style="fill:none;stroke-width:3" />
     </g>
     <g
-       stroke="#000000"
-       stroke-width="0.25"
-       fill="#DDBB99"
-       id="F">
+       id="F"
+       style="fill:#ddbb99;stroke:#000000;stroke-width:0.25">
       <rect
          id="rect2401"
          y="0"
@@ -472,15 +442,12 @@
          width="25" />
       <polygon
          id="polygon2411"
-         points="0,0 50,0 50,25 25,25 25,75 0,75 0,50 -25,50 -25,25 0,25 0,0"
-         stroke-width="3"
-         fill="none" />
+         points="-25,25 0,25 0,0 50,0 50,25 25,25 25,75 0,75 0,50 -25,50 "
+         style="fill:none;stroke-width:3" />
     </g>
     <g
-       stroke-width="0.25"
-       stroke="#000000"
-       fill="#EEAAAA"
-       id="I">
+       id="I"
+       style="fill:#eeaaaa;stroke:#000000;stroke-width:0.25">
       <rect
          id="rect2388"
          y="0"
@@ -515,10 +482,9 @@
          id="rect2398"
          y="0"
          x="0"
-         stroke-width="3"
-         fill="none"
          height="125"
-         width="25" />
+         width="25"
+         style="fill:none;stroke-width:3" />
     </g>
     <inkscape:perspective
        id="perspective2682"
@@ -539,15 +505,20 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="30.714286"
-     inkscape:cy="520"
+     inkscape:cx="12.214276"
+     inkscape:cy="-102.78572"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="911"
      inkscape:window-height="670"
      inkscape:window-x="84"
-     inkscape:window-y="16" />
+     inkscape:window-y="16"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-maximized="0" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -556,13 +527,15 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-18.50001,-158.00504)">
     <g
        id="g2769"
        transform="translate(-133.57142,286.6479)">
