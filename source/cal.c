@@ -3,7 +3,6 @@
 #define PRINTLOCATION 0
 #define PRINTBASE 0
 #define PRINTPATTERN 0
-#define DRAWPIECE 0
 #define TOTALMEMORY 0
 #define PRINTBITSQUARE 0
 
@@ -12,7 +11,6 @@
 
 #include "stdio.h"
 #include "stdlib.h"
-/* #include "malloc.h" */
 #include "string.h"
 #include "hex.h"
 #include "dontuse.h"
@@ -108,7 +106,7 @@ void CalculateAllpiece(void)
 			printf("9876 54321098 76543210 98765432 10987654 32109876 54321098 76543210\n");
 			PrintPattern(&Allpiece[i][j]);
 			printf("\n");
-			printf("%d, %d, %lx\n", Allpiece[i][j].location,
+			printf("%d, %d, %x\n", Allpiece[i][j].location,
 				Allpiece[i][j].lowestbit, Allpiece[i][j].u.base);
 
 #if DONTUSE
@@ -118,7 +116,7 @@ void CalculateAllpiece(void)
 				FILE *file;
 				if ((file = fopen("hex.out", "at+")) == NULL)
 					exit(1);
-				fprintf(file, "%d, %lx\n", Allpiece[i][j].location, Allpiece[i][j].u.base);
+				fprintf(file, "%d, %x\n", Allpiece[i][j].location, Allpiece[i][j].u.base);
 				fclose(file);
 			}
 			else if (character == 's')
@@ -412,7 +410,7 @@ void CalculateSquare(void)
 	{
 		Square[sq] = mymalloc(SquareCount[sq]*sizeof(SQUARE));
 #if DISPLAYSQUARE
-		printf("Square %d is %d bytes\n", sq, SquareCount[sq]*sizeof(SQUARE) );
+		printf("Square %d is %ld bytes\n", sq, SquareCount[sq]*sizeof(SQUARE) );
 #endif
 		if (!Square[sq])
 		{
@@ -518,7 +516,7 @@ void CalculateBitsq(void)
 	{
 		Bitsq[i] = bit;
 #if PRINTBITSQUARE
-		printf("Bitsq[%d] %lx\n", i, Bitsq[i]);
+		printf("Bitsq[%d] %x\n", i, Bitsq[i]);
 #endif
 		bit <<= 1;
 	}

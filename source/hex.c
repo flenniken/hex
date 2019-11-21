@@ -68,20 +68,18 @@ int main(void)
 
 		printf("square %d\n", sq);
 		printf("elapsed time %4.2f sec\n", ((float)clock() - Cstart) / CLOCKS_PER_SEC);
-		if (sq == 1)
-    {
-      printf("square is 1")
-			exit(1);
-    }
+		/* if (sq == 1) */
+    /* { */
+    /*   printf("square is 1\n"); */
+		/* 	exit(1); */
+    /* } */
 
 		for (k = 0; k < SquareCount[sq]; k++)
 		{
 			i = Square[sq][k].i;
 			j = Square[sq][k].j;
 
-#if DEBUG
 			assert(i >= 0 && i < 12);
-#endif
 
 			numbits = 0;
 			for (n = 0; n < 4; n++)
@@ -100,7 +98,7 @@ int main(void)
 				printf("error numbits %d\n", numbits);
 				printf("9876 54321098 76543210 98765432 10987654 32109876 54321098 76543210\n");
 				PrintPattern(&Allpiece[i][j]);
-				printf("%d, %lx\n", Allpiece[i][j].location, Allpiece[i][j].u.base);
+				printf("%d, %x\n", Allpiece[i][j].location, Allpiece[i][j].u.base);
 				printf("\n");
 				exit(1);
 			}
@@ -153,7 +151,7 @@ int main(void)
 				k += Square[Bitsquare][k].next-1;
 		}
 	}
-	printf("Total time %4.2f sec\n", ((float)clock() - Cstart) / CLOCKS_PER_SEC);
+	printf("\nTotal time %4.2f sec\n", ((float)clock() - Cstart) / CLOCKS_PER_SEC);
   printf("See solution.out\n");
   return 0;
 }
@@ -241,7 +239,7 @@ void trynextsquare(int kk)
 		}
 #if DISPLAYREMOVE
 		RemoveCount++;
-		printf("Before remove %lu\n", RemoveCount);
+		printf("Before remove %u\n", RemoveCount);
 		DisplayBoard(NULL);
 		printf("\n");
 #endif
@@ -276,7 +274,7 @@ void trynextsquare(int kk)
 		P[i] = -1;
 
 #if DISPLAYREMOVE
-		printf("Remove %lu\n", RemoveCount);
+		printf("Remove %u\n", RemoveCount);
 		DisplayBoard(NULL);
 		printf("\n");
 #endif

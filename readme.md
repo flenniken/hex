@@ -18,7 +18,8 @@ cc -o hex hex.o cal.o asm.o
 
 ./hex
 
-....................................Total time 14.55 sec
+....................................
+Total time 14.55 sec
 See solution.out
 
 tail solution.out 
