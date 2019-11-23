@@ -66,7 +66,7 @@ ccbbaa3331
 ## Non-Trival Solutions
 
 A trival solution is created from a known solution by rotation or
-reflect of the whole board.
+reflection of the whole board.
 
 Run trival.py to find the trival and non-trival solutions by post
 processing the solutions.out file. There are 2339 non-trival solutions.
@@ -82,3 +82,24 @@ aaa6657777
 13bbcc9942
 1333c99444
 ~~~
+
+## History
+
+I wrote the C code in late 1980's. Several people at Microrim where I
+worked at the time were all working independently on the problem for
+fun. It took a long time to run in those days. I added some assembly
+to speed it up.  The solution.out file that's checked in has a date of
+1991 and shows it ran in 28730.53 seconds which is about 8 hours.
+
+I updated the code two times. The first was so it would run on Windows
+and 32 bit hardware. The assembly was a problem so I took it out. The
+second time, the last few days, I updated it to run on 64 bit hardware
+on a Mac. No big changes. The code is at this point is a historial
+artifact.
+
+The lastest changes added the python script to verify that the code
+finds the correct number of non-trival solutions as wikipedia
+reports. This was done post processing because it was a lot easier in
+python and I didn't want modify the original C code too much.
+
+https://en.wikipedia.org/wiki/Pentomino
