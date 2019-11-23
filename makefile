@@ -19,5 +19,5 @@ asm.o : source/asm.c source/hex.h
 
 .PHONY : clean
 clean :
-	rm -f hex $(objects) solution.out
+	rm -f hex $(objects) solution.out *.pyc
 

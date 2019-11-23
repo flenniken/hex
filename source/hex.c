@@ -53,6 +53,8 @@ int main(void)
 
     Cstart = clock();
 
+    remove("solution.out");
+
     CalculateBitsq();
 
     CalculateAllpiece();
@@ -203,10 +205,10 @@ void trynextsquare(int kk)
         {
             FILE *file;
             if ((file = fopen("solution.out", "at+")) == NULL)
-      {
-        printf("unable to open solutions.out");
-                exit(1);
-      }
+            {
+              printf("unable to open solutions.out");
+              exit(1);
+            }
 
             Solutions++;
 
