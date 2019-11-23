@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="253"
+   height="153"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   sodipodi:docname="solution9356.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.1">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <g
+       id="Z"
+       style="fill:#dd99bb;stroke:#000000;stroke-width:0.25">
+      <rect
+         id="rect2531"
+         y="0"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2533"
+         y="0"
+         x="25"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2535"
+         y="25"
+         x="25"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2537"
+         y="50"
+         x="25"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2539"
+         y="50"
+         x="50"
+         height="25"
+         width="25" />
+      <polygon
+         id="polygon2541"
+         points="50,0 50,50 75,50 75,75 25,75 25,25 0,25 0,0 "
+         style="fill:none;stroke-width:3" />
+    </g>
+    <g
+       id="Y"
+       style="fill:#cc88cc;stroke:#000000;stroke-width:0.25">
+      <rect
+         id="rect2518"
+         y="0"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2520"
+         y="25"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2522"
+         y="50"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2524"
+         y="75"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2526"
+         y="25"
+         x="25"
+         height="25"
+         width="25" />
+      <polygon
+         id="polygon2528"
+         points="25,0 25,25 50,25 50,50 25,50 25,100 0,100 0,0 "
+         style="fill:none;stroke-width:3" />
+    </g>
+    <g
+       id="X"
+       style="fill:#bb99dd;stroke:#000000;stroke-width:0.25">
+      <rect
+         id="rect2505"
+         y="0"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2507"
+         y="25"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2509"
+         y="50"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2511"
+         y="25"
+         x="-25"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2513"
+         y="25"
+         x="25"
+         height="25"
+         width="25" />
+      <polygon
+         id="polygon2515"
+         points="-25,50 -25,25 0,25 0,0 25,0 25,25 50,25 50,50 25,50 25,75 0,75 0,50 "
+         style="fill:none;stroke-width:3" />
+    </g>
+    <g
+       id="W"
+       style="fill:#aaaaee;stroke:#000000;stroke-width:0.25">
+      <rect
+         id="rect2492"
+         y="0"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2494"
+         y="25"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2496"
+         y="25"
+         x="25"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2498"
+         y="50"
+         x="25"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2500"
+         y="50"
+         x="50"
+         height="25"
+         width="25" />
+      <polygon
+         id="polygon2502"
+         points="0,50 0,0 25,0 25,25 50,25 50,50 75,50 75,75 25,75 25,50 "
+         style="fill:none;stroke-width:3" />
+    </g>
+    <g
+       id="V"
+       style="fill:#99bbdd;stroke:#000000;stroke-width:0.25">
+      <rect
+         id="rect2479"
+         y="0"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2481"
+         y="25"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2483"
+         y="50"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2485"
+         y="50"
+         x="25"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2487"
+         y="50"
+         x="50"
+         height="25"
+         width="25" />
+      <polygon
+         id="polygon2489"
+         points="75,50 75,75 0,75 0,0 25,0 25,50 "
+         style="fill:none;stroke-width:3" />
+    </g>
+    <g
+       id="U"
+       style="fill:#88cccc;stroke:#000000;stroke-width:0.25">
+      <rect
+         id="rect2466"
+         y="0"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2468"
+         y="25"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2470"
+         y="25"
+         x="25"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2472"
+         y="25"
+         x="50"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2474"
+         y="0"
+         x="50"
+         height="25"
+         width="25" />
+      <polygon
+         id="polygon2476"
+         points="25,0 25,25 50,25 50,0 75,0 75,50 0,50 0,0 "
+         style="fill:none;stroke-width:3" />
+    </g>
+    <g
+       id="T"
+       style="fill:#99ddbb;stroke:#000000;stroke-width:0.25">
+      <rect
+         id="rect2453"
+         y="0"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2455"
+         y="0"
+         x="25"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2457"
+         y="0"
+         x="50"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2459"
+         y="25"
+         x="25"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2461"
+         y="50"
+         x="25"
+         height="25"
+         width="25" />
+      <polygon
+         id="polygon2463"
+         points="75,0 75,25 50,25 50,75 25,75 25,25 0,25 0,0 "
+         style="fill:none;stroke-width:3" />
+    </g>
+    <g
+       id="H"
+       style="fill:#aaeeaa;stroke:#000000;stroke-width:0.25">
+      <rect
+         id="rect2440"
+         y="0"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2442"
+         y="25"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2444"
+         y="50"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2446"
+         y="50"
+         x="25"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2448"
+         y="75"
+         x="25"
+         height="25"
+         width="25" />
+      <polygon
+         id="polygon2450"
+         points="25,0 25,50 50,50 50,100 25,100 25,75 0,75 0,0 "
+         style="fill:none;stroke-width:3" />
+    </g>
+    <g
+       id="P"
+       style="fill:#bbdd99;stroke:#000000;stroke-width:0.25">
+      <rect
+         id="rect2427"
+         y="0"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2429"
+         y="25"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2431"
+         y="50"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2433"
+         y="0"
+         x="25"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2435"
+         y="25"
+         x="25"
+         height="25"
+         width="25" />
+      <polygon
+         id="polygon2437"
+         points="25,50 25,75 0,75 0,0 50,0 50,50 "
+         style="fill:none;stroke-width:3" />
+    </g>
+    <g
+       id="L"
+       style="fill:#cccc88;stroke:#000000;stroke-width:0.25">
+      <rect
+         id="rect2414"
+         y="0"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2416"
+         y="25"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2418"
+         y="50"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2420"
+         y="75"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2422"
+         y="75"
+         x="25"
+         height="25"
+         width="25" />
+      <polygon
+         id="polygon2424"
+         points="50,75 50,100 0,100 0,0 25,0 25,75 "
+         style="fill:none;stroke-width:3" />
+    </g>
+    <g
+       id="F"
+       style="fill:#ddbb99;stroke:#000000;stroke-width:0.25">
+      <rect
+         id="rect2401"
+         y="0"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2403"
+         y="25"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2405"
+         y="50"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2407"
+         y="0"
+         x="25"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2409"
+         y="25"
+         x="-25"
+         height="25"
+         width="25" />
+      <polygon
+         id="polygon2411"
+         points="0,25 0,0 50,0 50,25 25,25 25,75 0,75 0,50 -25,50 -25,25 "
+         style="fill:none;stroke-width:3" />
+    </g>
+    <g
+       id="I"
+       style="fill:#eeaaaa;stroke:#000000;stroke-width:0.25">
+      <rect
+         id="rect2388"
+         y="0"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2390"
+         y="25"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2392"
+         y="50"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2394"
+         y="75"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2396"
+         y="100"
+         x="0"
+         height="25"
+         width="25" />
+      <rect
+         id="rect2398"
+         y="0"
+         x="0"
+         height="125"
+         width="25"
+         style="fill:none;stroke-width:3" />
+    </g>
+    <inkscape:perspective
+       id="perspective2682"
+       inkscape:persp3d-origin="312.5 : 191.66667 : 1"
+       inkscape:vp_z="625 : 287.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 287.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="30.474761"
+     inkscape:cy="46.107033"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1432"
+     inkscape:window-height="644"
+     inkscape:window-x="111"
+     inkscape:window-y="38"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-228.28615,-202.32772)"
+     style="display:inline">
+    <g
+       id="g3827"
+       transform="translate(207.08127,43.436559)">
+      <use
+         id="use2543"
+         transform="rotate(-180,36.352438,155.19558)"
+         xlink:href="#F"
+         x="0"
+         y="0"
+         width="744.09448"
+         height="1052.3622" />
+      <use
+         id="use2545"
+         transform="matrix(1,0,0,-1,22.704876,285.39116)"
+         xlink:href="#H"
+         x="0"
+         y="0"
+         width="744.09448"
+         height="1052.3622" />
+      <use
+         id="use2547"
+         transform="translate(247.70488,185.39116)"
+         xlink:href="#I"
+         x="0"
+         y="0"
+         width="744.09448"
+         height="1052.3622" />
+      <use
+         id="use2549"
+         transform="matrix(0,1,1,0,97.70488,160.39116)"
+         xlink:href="#L"
+         x="0"
+         y="0"
+         width="744.09448"
+         height="1052.3622" />
+      <use
+         id="use2551"
+         transform="matrix(0,1,1,0,122.70488,260.39116)"
+         xlink:href="#P"
+         x="0"
+         y="0"
+         width="744.09448"
+         height="1052.3622" />
+      <use
+         id="use2553"
+         transform="translate(197.70488,160.39116)"
+         xlink:href="#T"
+         x="0"
+         y="0"
+         width="744.09448"
+         height="1052.3622" />
+      <use
+         id="use2555"
+         transform="rotate(180,48.852438,105.19558)"
+         xlink:href="#U"
+         x="0"
+         y="0"
+         width="744.09448"
+         height="1052.3622" />
+      <use
+         id="use2557"
+         transform="rotate(-90,241.54802,68.84314)"
+         xlink:href="#V"
+         x="0"
+         y="0"
+         width="744.09448"
+         height="1052.3622" />
+      <use
+         id="use2559"
+         transform="rotate(90,-18.843142,166.54802)"
+         xlink:href="#W"
+         x="0"
+         y="0"
+         width="744.09448"
+         height="1052.3622" />
+      <use
+         id="use2561"
+         transform="translate(147.70488,185.39116)"
+         xlink:href="#X"
+         x="0"
+         y="0"
+         width="744.09448"
+         height="1052.3622" />
+      <use
+         id="use2563"
+         transform="rotate(-180,111.35244,142.69558)"
+         xlink:href="#Y"
+         x="0"
+         y="0"
+         width="744.09448"
+         height="1052.3622" />
+      <use
+         id="use2565"
+         transform="matrix(-1,0,0,1,147.70488,235.39116)"
+         xlink:href="#Z"
+         x="0"
+         y="0"
+         width="744.09448"
+         height="1052.3622" />
+    </g>
+  </g>
+</svg>

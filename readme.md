@@ -6,6 +6,10 @@ Here are the pieces:
 
 <img src="./pieces.svg">
 
+Here is solution 9356:
+
+<img src="./solution9356.svg">
+
 Run hex to see the solutions.
 
 ```
