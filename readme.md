@@ -33,3 +33,17 @@ elapsed time 14.55 sec
 8ccbaaa731
 ccbbaa3331
 ```
+
+Run trival.py to find the trival and non-trival solutions:
+
+```
+python trival.py | tail
+
+2339:
+aaa6657777
+1aa6555722
+1bb6658882
+13bcc88942
+13bbcc9942
+1333c99444
+```
