@@ -97,7 +97,7 @@ second time, the last few days, I updated it to run on 64 bit hardware
 on a Mac. No big changes. The code is at this point is a historial
 artifact.
 
-The lastest changes added the python script to verify that the code
+The latest changes added the python script to verify that the code
 finds the correct number of non-trival solutions as wikipedia
 reports. This was done post processing because it was a lot easier in
 python and I didn't want modify the original C code too much.
