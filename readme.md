@@ -1,3 +1,5 @@
+![](https://github.com/flenniken/hex/workflows/make/badge.svg)
+
 # Hex
 
 Find the pentomino puzzle solutions for a 10x6 board.
@@ -104,4 +106,3 @@ python and I didn't want modify the original C code too much.
 
 https://en.wikipedia.org/wiki/Pentomino
 
-https://github.com/flenniken/hex/workflows/make/badge.svg
