@@ -3,9 +3,9 @@ name: make
 on: [push]
 
 jobs:
-  build:
 
-    runs-on: ubuntu-latest
+  build:
+    runs-on: [ubuntu-latest, windows-latest, macos-latest]
     
     steps:
     - uses: actions/checkout@v1
