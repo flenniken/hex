@@ -9,6 +9,7 @@
 #define PRINTSQUAREDETAILS 0
 #define DISPLAYSQUARE 0
 
+#include "stdint.h"
 #include "stdio.h"
 #include "stdlib.h"
 #include "string.h"
