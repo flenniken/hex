@@ -103,3 +103,5 @@ reports. This was done post processing because it was a lot easier in
 python and I didn't want modify the original C code too much.
 
 https://en.wikipedia.org/wiki/Pentomino
+
+https://github.com/flenniken/hex/workflows/make/badge.svg
