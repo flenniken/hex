@@ -7,7 +7,7 @@ coptions = -O3 -c
 ifeq ($(OS),Windows_NT)
     SEP := "\\"
 else
-    SEP := "/"
+    SEP := "aaa"
 endif
 
 SRC_DIR = source
