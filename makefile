@@ -5,9 +5,9 @@ objects = hex.o cal.o asm.o
 coptions = -O3 -c
 
 ifeq ($(OS),Windows_NT)
-    SEP := "\\\\"
+    SEP := \\
 else
-    SEP := "/"
+    SEP := /
 endif
 
 SRC_DIR = source
