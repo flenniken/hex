@@ -1,4 +1,4 @@
-![](https://github.com/flenniken/hex/workflows/make/badge.svg) :white_check_mark: mac, :white_check_mark: ubuntu
+:white_check_mark: Mac, :white_check_mark: Ubuntu ![](https://github.com/flenniken/hex/workflows/make/badge.svg) 
 
 # Hex
 
